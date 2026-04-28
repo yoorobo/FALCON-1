@@ -4,3 +4,6 @@
 [submodule "docs/references/ros-repo-2"]
 	path = docs/references/ros-repo-2
 	url = https://github.com/yoorobo/ShopPinkki.git
+[submodule "docs/references/vic_pinky"]
+	path = docs/references/vic_pinky
+	url = https://github.com/pinklab-art/vic_pinky.git
