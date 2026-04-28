@@ -115,3 +115,15 @@ base_footprint
 5. **udev rules 관리** — 시리얼 디바이스 안정적 식별 패턴 (`/dev/rplidar` alias) 동일하게 적용 권장
 6. **URDF xacro 모듈화** — `robot_core`, `camera`, `lidar`, `gazebo_control` 분리 구조 → FALCON-1 URDF 설계 시 동일 패턴 채용 권장
 7. **Gazebo 시뮬 분리** — 로봇 탑재 시 `vicpinky_gazebo/` 패키지 제거하는 방식 → FALCON-1 배포 환경 구성 시 참고
+
+---
+
+## Connection Info
+
+### WiFi AP Mode
+- SSID: vicpinky_XXXX (check robot for exact SSID)
+- Connection: Direct AP mode (no internet required)
+
+### SSH Access
+- Command: ssh vic@192.168.5.1
+- Note: Connect to WiFi AP first, then SSH
