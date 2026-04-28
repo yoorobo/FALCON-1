@@ -1,0 +1,14 @@
+# 불필요한 파일
+*.sh
+nohup.out
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# 참고용 clone 레포 (서브모듈로 관리)
+docs/references/deeplearning-repo-4/
+docs/references/ros-repo-2/
+docs/references/vic_pinky/
