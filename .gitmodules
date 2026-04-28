@@ -1,0 +1,6 @@
+[submodule "docs/references/deeplearning-repo-4"]
+	path = docs/references/deeplearning-repo-4
+	url = https://github.com/yoorobo/Hand-Gesture-Recognition-.git
+[submodule "docs/references/ros-repo-2"]
+	path = docs/references/ros-repo-2
+	url = https://github.com/yoorobo/ShopPinkki.git
