@@ -8,6 +8,14 @@
 - **자율주행**: Vic Pinky
 - **양팔로봇**: OpenArm (pick and place)
 
+## Software Environment
+- OS: Ubuntu 24.04 LTS
+- ROS2: Jazzy (Ubuntu 24.04 LTS 호환 버전)
+- Simulation: Gazebo / Isaac Sim
+- ML Framework: ACT / LeRobot
+- Container: Docker
+- ML Server: NVIDIA RTX 5090 / CUDA 13.1 / Slurm 23.11
+
 ## 운용 규칙
 - OpenArm 페이로드 **4.1kg 초과 금지**
 - Gazebo 시뮬레이션 미통과 시 **실기체 실행 금지**
