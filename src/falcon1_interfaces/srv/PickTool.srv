@@ -1,0 +1,13 @@
+# PickTool.srv
+# 공구 픽 요청 서비스 (UR_C01: 성공률 ≥ 98%, 사이클 ≤ 20초)
+
+# Request
+string tool_id          # 픽 대상 공구 ID
+string slot_id          # 픽 대상 슬롯 ID
+string arm_side         # 사용 팔: "left" | "right"
+int32 max_retries       # 최대 재시도 횟수 (UR_C03: 최대 2회)
+---
+# Response
+bool success
+string message          # 실패 시 원인 메시지
+float64 cycle_time_sec  # 실제 소요 시간

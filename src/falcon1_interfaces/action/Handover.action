@@ -1,0 +1,19 @@
+# Handover.action
+# 공구를 작업자에게 전달하는 핸드오버 시퀀스
+# (UR_D01: 성공률 ≥ 95%, UR_D02: EEF 속도 ≤ 250mm/s, UR_D04: grip-state 감지 후 release)
+
+# Goal
+string tool_id              # 전달할 공구 ID
+string arm_side             # "left" | "right"
+geometry_msgs/Pose approach_pose   # 핸드오버 접근 포즈
+bool safe_orientation        # 핸들 우선 방향 강제 여부 (UR_D03)
+---
+# Result
+bool success
+string failure_reason        # "" | "grip_not_detected" | "user_retreated" | "timeout"
+float64 handover_time_sec
+---
+# Feedback
+string phase                 # "approaching" | "presenting" | "waiting_grip" | "releasing" | "retracting"
+float64 eef_speed_mm_s       # 현재 EEF 속도 모니터링 (≤ 250mm/s 준수)
+bool grip_detected           # 그립 감지 여부

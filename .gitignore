@@ -4,3 +4,13 @@ __pycache__/
 .secrets
 *.log
 nohup.out
+
+.anaconda/
+bin/
+include/
+lib/
+share/
+*.bak
+build/
+install/
+log/

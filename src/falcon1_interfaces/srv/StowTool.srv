@@ -1,0 +1,12 @@
+# StowTool.srv
+# 공구 수납 요청 서비스 (UR_C04: stow 성공률 ≥ 98%, 오슬롯 stow 0건)
+
+# Request
+string tool_id          # 수납 대상 공구 ID
+string target_slot_id   # 원 슬롯 ID
+string arm_side         # 사용 팔: "left" | "right"
+---
+# Response
+bool success
+string message          # 실패 원인: "slot_occupied" | "unregistered_tool" | "damaged_tool"
+string actual_slot_id   # 실제 수납된 슬롯 ID

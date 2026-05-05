@@ -1,0 +1,83 @@
+<mxfile version="24.2.5">
+  <diagram name="Robot State Diagram" id="state-diag">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- States -->
+        <mxCell id="start" value="" style="ellipse;fillColor=#000000;strokeColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IDLE" value="IDLE&#10;(Wait for PTT Command)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="100" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NAVIGATING" value="NAVIGATING&#10;(Moving to Target)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="200" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DOCKING" value="DOCKING&#10;(Align to Cabinet)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="300" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PICKING" value="PICKING / STOWING&#10;(OpenArm Tool IO)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="400" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TRACKING" value="TRACKING&#10;(Following User)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HANDOVER" value="HANDOVER&#10;(Pass/Receive Tool)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SAFE_POSE" value="SAFE_POSE&#10;(E-STOP / Violation)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Edges -->
+        <mxCell id="e_start" edge="1" parent="1" source="start" target="IDLE">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_idle_nav" edge="1" parent="1" source="IDLE" target="NAVIGATING" value="Task Assigned">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nav_dock" edge="1" parent="1" source="NAVIGATING" target="DOCKING" value="Reach Cabinet">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_dock_pick" edge="1" parent="1" source="DOCKING" target="PICKING" value="Docking Success">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pick_nav" edge="1" parent="1" source="PICKING" target="NAVIGATING" value="Tool Retrieved">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="425" />
+              <mxPoint x="80" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_nav_track" edge="1" parent="1" source="NAVIGATING" target="TRACKING" value="Reach User">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_track_hand" edge="1" parent="1" source="TRACKING" target="HANDOVER" value="User Ready">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_hand_idle" edge="1" parent="1" source="HANDOVER" target="IDLE" value="Handover Complete">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="425" />
+              <mxPoint x="800" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_any_safe" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="IDLE" target="SAFE_POSE" value="Violation / Low Battery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

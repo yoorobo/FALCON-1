@@ -7,3 +7,6 @@
 [submodule "docs/references/vic_pinky"]
 	path = docs/references/vic_pinky
 	url = https://github.com/pinklab-art/vic_pinky.git
+[submodule "src/openarm_ros2"]
+	path = src/openarm_ros2
+	url = https://github.com/enactic/openarm_ros2.git

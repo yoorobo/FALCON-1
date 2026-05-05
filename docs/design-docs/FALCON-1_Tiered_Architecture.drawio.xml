@@ -1,0 +1,151 @@
+<mxfile version="24.2.5">
+  <diagram name="FALCON-1 Architecture" id="falcon-arch-v2">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Swimlanes -->
+        <mxCell id="layer_ui" value="UI" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#d7d7d7;dashed=1;startSize=40;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="1000" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="layer_server" value="SERVER" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;startSize=40;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="1000" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="layer_equip" value="EQUIP" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;startSize=40;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="1000" height="350" as="geometry" />
+        </mxCell>
+
+        <!-- UI Components -->
+        <mxCell id="user_dev_box" value="User Device" style="text;html=1;align=left;verticalAlign=top;spacingLeft=10;fontStyle=1;fontSize=14;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="120" y="60" width="300" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="user_ui" value="PTT Voice Interface&#10;(User Commands)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="150" y="110" width="240" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="admin_dev_box" value="Admin Device" style="text;html=1;align=left;verticalAlign=top;spacingLeft=10;fontStyle=1;fontSize=14;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="450" y="60" width="550" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_ui" value="Admin Dashboard&#10;(Web Browser / Tablet)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="480" y="110" width="490" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Server Components -->
+        <mxCell id="edge_server_box" value="Edge Server (RTX 5090 Blackwell)" style="text;html=1;align=left;verticalAlign=top;spacingLeft=10;fontStyle=1;fontSize=14;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="120" y="370" width="880" height="240" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="llm_service" value="LLM Reasoning&#10;Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="150" y="440" width="160" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="isaac_sim" value="Isaac Sim&#10;(Digital Twin &amp; Stream)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="360" y="440" width="300" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="vla_service" value="VLA Model&#10;(ACT/LeRobot)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="710" y="440" width="260" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Equip Components -->
+        <mxCell id="robot_box" value="FALCON-1 Mobile Manipulator X 1" style="text;html=1;align=left;verticalAlign=top;spacingLeft=10;fontStyle=1;fontSize=14;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="120" y="670" width="880" height="290" as="geometry" />
+        </mxCell>
+
+        <!-- ROS2 Packages area -->
+        <mxCell id="ros_pkgs_box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="150" y="720" width="820" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ros_pkg_label" value="ROS 2 Workspace Packages" style="text;html=1;align=left;verticalAlign=top;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="160" y="725" width="200" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pkg_nav" value="Nav2 Packages&#10;(SLAM, Tracking)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="170" y="755" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pkg_moveit" value="MoveIt2 Packages&#10;(Bimanual Grasp)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="380" y="755" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pkg_safety" value="Safety Manager&#10;(ISO 10218-2 PFL)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="590" y="755" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pkg_perception" value="Perception&#10;(AprilTag/Vision)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="755" width="150" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- HW Nodes (Ellipses) -->
+        <mxCell id="hw_lidar" value="2D LiDAR" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="150" y="890" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hw_cam" value="RealSense" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="890" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hw_arm1" value="OpenArm x2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="890" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hw_base" value="Vic Pinky Base" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="620" y="890" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hw_estop" value="E-Stop / Power" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="790" y="890" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Connections (Edges) -->
+        <mxCell id="conn_user_llm" edge="1" parent="1" source="user_ui" target="llm_service" value="HTTP / Audio Stream">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_admin_sim" edge="1" parent="1" source="admin_ui" target="isaac_sim" value="WebSocket (Stream) / HTTP">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Edge from LLM to ROS Package Area -->
+        <mxCell id="conn_llm_ros" edge="1" parent="1" source="llm_service" target="ros_pkgs_box" value="ROS 2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <!-- Edge from Sim to ROS Package Area -->
+        <mxCell id="conn_sim_ros" edge="1" parent="1" source="isaac_sim" target="ros_pkgs_box" value="ROS 2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Edge from VLA to ROS Package Area -->
+        <mxCell id="conn_vla_ros" edge="1" parent="1" source="vla_service" target="ros_pkgs_box" value="ROS 2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Hardware to ROS Edges -->
+        <mxCell id="conn_lidar_ros" edge="1" parent="1" source="hw_lidar" target="pkg_nav" value="ROS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_cam_ros" edge="1" parent="1" source="hw_cam" target="pkg_perception" value="USB/ROS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="870" />
+              <mxPoint x="875" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn_arm_ros" edge="1" parent="1" source="hw_arm1" target="pkg_moveit" value="EtherCAT/ROS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_base_ros" edge="1" parent="1" source="hw_base" target="pkg_nav" value="Serial/ROS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_estop_ros" edge="1" parent="1" source="hw_estop" target="pkg_safety" value="GPIO">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

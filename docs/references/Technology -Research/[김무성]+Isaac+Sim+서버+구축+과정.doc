@@ -1,0 +1,624 @@
+Date: Fri, 1 May 2026 09:11:02 +0000 (UTC)
+Message-ID: <892068601.25.1777626662901@416eb51dd5b7>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_24_1378385479.1777626662901"
+
+------=_Part_24_1378385479.1777626662901
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>[=EA=B9=80=EB=AC=B4=EC=84=B1] Isaac Sim =EC=84=9C=EB=B2=84 =EA=
+=B5=AC=EC=B6=95 =EA=B3=BC=EC=A0=95</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>[=EA=B9=80=EB=AC=B4=EC=84=B1] Isaac Sim =EC=84=9C=EB=B2=84 =EA=B5=
+=AC=EC=B6=95 =EA=B3=BC=EC=A0=95</h1>
+    <div class=3D"Section1">
+        <h1 local-id=3D"97183d196f95" id=3D"id-[=EA=B9=80=EB=AC=B4=EC=84=B1=
+]IsaacSim=EC=84=9C=EB=B2=84=EA=B5=AC=EC=B6=95=EA=B3=BC=EC=A0=95-=F0=9F=A4=
+=96Dual-ArmIsaacLabSimulationOptimizationReport">=F0=9F=A4=96 Dual-Arm Isaa=
+c Lab Simulation Optimization Report</h1>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence"># =F0=
+=9F=A4=96 Dual-Arm Isaac Lab Simulation Optimization Report
+
+**=EC=9D=BC=EC=8B=9C**: 2026-04-29
+**=EB=8C=80=EC=83=81**: RTX 5090 (Blackwell) Server &amp; Dual-Arm Robot (o=
+mx_f)
+**=EB=AA=A9=ED=91=9C**: headless =ED=99=98=EA=B2=BD=EC=97=90=EC=84=9C=EC=9D=
+=98 =EC=95=88=EC=A0=95=EC=A0=81=EC=9D=B8 =EB=A1=9C=EB=B4=87 =EC=86=8C=ED=99=
+=98 =EB=B0=8F =EC=9B=90=EA=B2=A9 =EC=8A=A4=ED=8A=B8=EB=A6=AC=EB=B0=8D =EA=
+=B5=AC=EC=B6=95
+
+---
+
+## 1. =F0=9F=9A=80 =ED=95=98=EB=93=9C=EC=9B=A8=EC=96=B4 =ED=98=B8=ED=99=98=
+=EC=84=B1 =ED=95=B4=EA=B2=B0 (RTX 5090 Blackwell)
+- **=EB=AC=B8=EC=A0=9C**: RTX 5090=EC=9D=98 `sm_120` =EC=95=84=ED=82=A4=ED=
+=85=8D=EC=B2=98=EA=B0=80 =EC=B5=9C=EC=8B=A0 Isaac Sim =EC=BB=A4=EB=84=90=EA=
+=B3=BC =EC=B6=A9=EB=8F=8C=ED=95=98=EC=97=AC CUDA =EA=B0=80=EC=86=8D =EC=8B=
+=9C=EB=AE=AC=EB=A0=88=EC=9D=B4=EC=85=98 =EB=B6=88=EA=B0=80.
+- **=ED=95=B4=EA=B2=B0**: `SimulationCfg`=EC=97=90=EC=84=9C `device=3D"cpu"=
+` =EC=84=A4=EC=A0=95=EC=9D=84 =EA=B0=95=EC=A0=9C=ED=95=98=EC=97=AC =EB=AC=
+=BC=EB=A6=AC =EC=97=B0=EC=82=B0=EC=9D=84 CPU=EB=A1=9C =EB=B6=84=EC=82=B0, =
+=EB=93=9C=EB=9D=BC=EC=9D=B4=EB=B2=84 =ED=98=B8=ED=99=98=EC=84=B1 =EB=AC=B8=
+=EC=A0=9C=EB=A5=BC =EC=A7=80=EB=8A=A5=EC=A0=81=EC=9C=BC=EB=A1=9C =EC=9A=B0=
+=ED=9A=8C.
+
+## 2. =F0=9F=9B=A0=EF=B8=8F USD =EC=9E=90=EC=82=B0(Asset) =EC=A0=95=EA=B7=
+=9C=ED=99=94
+- **=EB=AC=B8=EC=A0=9C**: URDF=EC=97=90=EC=84=9C =EB=B3=80=ED=99=98=EB=90=
+=9C USD =ED=8C=8C=EC=9D=BC=EB=93=A4=EC=9D=B4 =EC=A0=88=EB=8C=80 =EA=B2=BD=
+=EB=A1=9C(`/home/ml2/...`)=EB=A5=BC =ED=8F=AC=ED=95=A8=ED=95=98=EA=B3=A0 =
+=EC=9E=88=EC=96=B4 =EC=BB=A8=ED=85=8C=EC=9D=B4=EB=84=88 =EB=82=B4=EB=B6=80=
+=EC=97=90=EC=84=9C =EB=A7=81=ED=81=AC =EB=A1=9C=EB=94=A9 =EC=8B=A4=ED=8C=A8=
+.
+- **=ED=95=B4=EA=B2=B0**: `sed` =EB=AA=85=EB=A0=B9=EC=96=B4=EB=A5=BC =ED=86=
+=B5=ED=95=B4 =EB=AA=A8=EB=93=A0 =EC=A0=88=EB=8C=80 =EA=B2=BD=EB=A1=9C=EB=A5=
+=BC =EC=83=81=EB=8C=80 =EA=B2=BD=EB=A1=9C(`./`, `../`)=EB=A1=9C =EB=B3=80=
+=ED=99=98=ED=95=98=EC=97=AC =ED=99=98=EA=B2=BD =EB=8F=85=EB=A6=BD=EC=84=B1 =
+=ED=99=95=EB=B3=B4.
+
+## 3. =F0=9F=A6=B4 =EB=AC=BC=EB=A6=AC =EA=B5=AC=EC=A1=B0 =EB=B0=8F =EA=B3=
+=84=EC=B8=B5 =EC=B5=9C=EC=A0=81=ED=99=94 (=ED=95=B5=EC=8B=AC =EC=84=B1=EA=
+=B3=BC)
+=EA=B0=80=EC=9E=A5 =EB=A7=8E=EC=9D=80 =EC=8B=9C=ED=96=89=EC=B0=A9=EC=98=A4=
+=EC=99=80 =EA=B8=B0=EC=88=A0=EC=A0=81 =EB=8F=8C=ED=8C=8C=EA=B5=AC=EA=B0=80 =
+=EC=9E=88=EC=97=88=EB=8D=98 =EC=A7=80=EC=A0=90=EC=9E=85=EB=8B=88=EB=8B=A4.
+
+### A. ArticulationRoot =EC=9D=B8=EC=8B=9D =EC=8B=A4=ED=8C=A8 =ED=95=B4=EA=
+=B2=B0
+- **=EC=9B=90=EC=9D=B8**: `ArticulationRootAPI`=EA=B0=80 =EC=A0=81=EC=A0=88=
+=ED=95=9C =EC=9C=84=EC=B9=98=EC=97=90 =EB=B0=95=ED=98=80 =EC=9E=88=EC=A7=80=
+ =EC=95=8A=EC=95=84 =EB=A1=9C=EB=B4=87=EC=9D=B4 =EB=8B=A8=EC=88=9C=ED=95=9C=
+ '=EA=B0=95=EC=B2=B4 =EB=8D=A9=EC=96=B4=EB=A6=AC'=EB=A1=9C =EC=9D=B8=EC=8B=
+=9D=EB=90=A8.
+- **=ED=95=B4=EA=B2=B0**: USDA =EB=AC=B8=EB=B2=95 =EA=B5=90=EC=A0=95=EC=9D=
+=84 =ED=86=B5=ED=95=B4 =EC=B5=9C=EC=83=81=EC=9C=84 =ED=94=84=EB=A6=BC(`omx_=
+f`)=EC=97=90 =EB=AA=85=EC=8B=9C=EC=A0=81=EC=9C=BC=EB=A1=9C API=EB=A5=BC =EC=
+=82=BD=EC=9E=85.
+
+### B. =EC=A4=91=EC=B2=A9=EB=90=9C =EA=B0=95=EC=B2=B4(Nested Rigid Bodies) =
+=EC=B6=A9=EB=8F=8C =ED=95=B4=EA=B2=B0
+- **=EC=9B=90=EC=9D=B8**: =EB=A7=81=ED=81=AC=EB=93=A4=EC=9D=B4 =EB=B6=80=EB=
+=AA=A8-=EC=9E=90=EC=8B=9D =EA=B4=80=EA=B3=84(`link0/link1/...`)=EB=A5=BC =
+=EA=B0=80=EC=A7=80=EB=A9=B4=EC=84=9C =EB=8F=99=EC=8B=9C=EC=97=90 =EA=B0=81=
+=EA=B0=81 `RigidBodyAPI`=EB=A5=BC =EA=B0=80=EC=A0=B8 PhysX =EC=97=94=EC=A7=
+=84=EC=9D=B4 =EC=97=B0=EC=82=B0 =EA=B1=B0=EB=B6=80.
+- **=ED=95=B4=EA=B2=B0**: **=EA=B3=84=EC=B8=B5 =EA=B5=AC=EC=A1=B0 =ED=8F=89=
+=ED=83=84=ED=99=94(Flat Hierarchy)** =EC=A0=81=EC=9A=A9. `Links`=EC=99=80 `=
+Joints` =ED=8F=B4=EB=8D=94=EB=A5=BC =EB=B6=84=EB=A6=AC=ED=95=98=EC=97=AC =
+=EB=AA=A8=EB=93=A0 =EB=A7=81=ED=81=AC=EB=A5=BC =ED=98=95=EC=A0=9C(Siblings)=
+ =EA=B4=80=EA=B3=84=EB=A1=9C =EC=9E=AC=EC=84=A4=EA=B3=84.
+
+### C. =EC=A0=95=EB=B0=80 =EA=B2=BD=EB=A1=9C =EB=A7=A4=ED=95=91 (The "Two D=
+ots" Solution)
+- **=EC=9B=90=EC=9D=B8**: =EA=B4=80=EC=A0=88=EC=9D=B4 =EB=A7=81=ED=81=AC=EB=
+=A5=BC =EC=B0=BE=EC=9D=84 =EB=95=8C =EA=B2=BD=EB=A1=9C =EA=B9=8A=EC=9D=B4 =
+=EB=AC=B8=EC=A0=9C=EB=A1=9C "=EC=A1=B4=EC=9E=AC=ED=95=98=EC=A7=80 =EC=95=8A=
+=EB=8A=94 =ED=94=84=EB=A6=BC" =EC=97=90=EB=9F=AC =EB=B0=9C=EC=83=9D.
+- **=ED=95=B4=EA=B2=B0**: `../../Links/linkX`=EC=99=80 =EA=B0=99=EC=9D=80 =
+=EB=AA=85=EC=8B=9C=EC=A0=81=EC=9D=B8 =EC=83=81=EB=8C=80 =EA=B2=BD=EB=A1=9C =
+=EA=B9=8A=EC=9D=B4 =EC=84=A4=EC=A0=95=EC=9D=84 =ED=86=B5=ED=95=B4 =EA=B4=80=
+=EC=A0=88=EA=B3=BC =EA=B0=95=EC=B2=B4=EB=A5=BC 100% =EC=97=B0=EA=B2=B0.
+
+## 4. =F0=9F=90=8D =ED=8C=8C=EC=9D=B4=EC=8D=AC =EC=8A=A4=ED=81=AC=EB=A6=BD=
+=ED=8A=B8 =EB=B0=8F =ED=99=98=EA=B2=BD =EC=A0=95=ED=99=94
+- **=EC=95=88=EC=A0=95=ED=99=94**: `write_joint_state_to_sim()` =EB=93=B1 =
+=EC=9E=98=EB=AA=BB=EB=90=9C =EB=A9=94=EC=84=9C=EB=93=9C =ED=98=B8=EC=B6=9C =
+=EA=B5=90=EC=A0=95 =EB=B0=8F =EB=A3=A8=ED=94=84 =EA=B5=AC=EC=A1=B0 =EA=B0=
+=9C=EC=84=A0.
+- **=EC=84=B1=EB=8A=A5 =EC=B5=9C=EC=A0=81=ED=99=94**: =EC=8B=9C=EC=8A=A4=ED=
+=85=9C =EB=B6=80=ED=95=98=EC=9D=98 =EC=A3=BC=EB=B2=94=EC=9D=B4=EC=97=88=EB=
+=8D=98 =EC=88=98=EB=A7=8E=EC=9D=80 =EC=9C=A0=EB=A0=B9 =ED=94=84=EB=A1=9C=EC=
+=84=B8=EC=8A=A4(Ghost Processes)=EB=A5=BC `pkill`=EB=A1=9C =EC=A0=95=EB=A6=
+=AC=ED=95=98=EC=97=AC =EB=8D=B0=EC=9D=B4=ED=84=B0=EB=B2=A0=EC=9D=B4=EC=8A=
+=A4 =EB=9D=BD =ED=95=B4=EA=B2=B0.
+
+---
+
+## 5. =F0=9F=93=A1 =EC=9B=90=EA=B2=A9 =EC=8B=9C=EA=B0=81=ED=99=94 =EC=8B=9C=
+=EC=8A=A4=ED=85=9C =EA=B5=AC=EC=B6=95
+- **=EC=84=9C=EB=B2=84**: RTX 5090=EC=97=90=EC=84=9C `--livestream 1 --head=
+less` =EC=98=B5=EC=85=98=EC=9C=BC=EB=A1=9C =EB=AC=B4=ED=95=9C =EC=8B=9C=EB=
+=AE=AC=EB=A0=88=EC=9D=B4=EC=85=98 =EB=A3=A8=ED=94=84 =EA=B0=80=EB=8F=99.
+- **=ED=81=B4=EB=9D=BC=EC=9D=B4=EC=96=B8=ED=8A=B8**: RTX 3060=EC=97=90=EC=
+=84=9C **Omniverse Streaming Client**=EB=A5=BC =ED=86=B5=ED=95=B4 =EC=84=9C=
+=EB=B2=84 IP=EB=A1=9C =EC=A0=91=EC=86=8D, =EC=8B=A4=EC=8B=9C=EA=B0=84 =EB=
+=A1=9C=EB=B4=87 =EA=B1=B0=EB=8F=99 =ED=99=95=EC=9D=B8 =EA=B0=80=EB=8A=A5.
+
+## =E2=9C=85 =EC=B5=9C=EC=A2=85 =EA=B2=B0=EA=B3=BC
+- **=EB=A1=9C=EB=B4=87 =EC=86=8C=ED=99=98**: =EC=84=B1=EA=B3=B5 (`Robot spa=
+wned successfully!`)
+- **=EA=B4=80=EC=A0=88 =EC=9D=B8=EC=8B=9D**: =EC=84=B1=EA=B3=B5 (`Number of=
+ joints: 5`)
+- **=EC=8B=9C=EB=AE=AC=EB=A0=88=EC=9D=B4=EC=85=98 =EB=A3=A8=ED=94=84**: =EC=
+=A0=95=EC=83=81 =EA=B0=80=EB=8F=99 =EC=A4=91 (CPU =EC=A0=90=EC=9C=A0=EC=9C=
+=A8 ~860% =EC=95=88=EC=A0=95=EC=A0=81 =EC=9C=A0=EC=A7=80)
+
+---
+*Developed &amp; Optimized by Antigravity AI*</pre>
+</div>
+</div>
+<h1 local-id=3D"120d09a35d12" id=3D"id-[=EA=B9=80=EB=AC=B4=EC=84=B1]IsaacSi=
+m=EC=84=9C=EB=B2=84=EA=B5=AC=EC=B6=95=EA=B3=BC=EC=A0=95-=F0=9F=9A=A6AI=EC=
+=9E=90=EC=9B=90=EC=84=B8=EB=A7=88=ED=8F=AC=EC=96=B4(AI_SEMAPHORE.md)">=F0=
+=9F=9A=A6 AI =EC=9E=90=EC=9B=90 =EC=84=B8=EB=A7=88=ED=8F=AC=EC=96=B4 (AI_SE=
+MAPHORE.md)</h1>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence"># =F0=
+=9F=9A=A6 AI =EC=9E=90=EC=9B=90 =EC=84=B8=EB=A7=88=ED=8F=AC=EC=96=B4 (AI_SE=
+MAPHORE.md)
+
+=EC=97=AC=EB=9F=AC =EC=95=88=ED=8B=B0=EA=B7=B8=EB=9E=98=EB=B9=84=ED=8B=B0(A=
+I) =EC=9D=B8=EC=8A=A4=ED=84=B4=EC=8A=A4=EA=B0=80 =ED=95=98=EB=93=9C=EC=9B=
+=A8=EC=96=B4 =EC=9E=90=EC=9B=90=EC=97=90=EC=84=9C =EC=B6=A9=EB=8F=8C=ED=95=
+=98=EB=8A=94 =EA=B2=83=EC=9D=84 =EB=B0=A9=EC=A7=80=ED=95=98=EA=B8=B0 =EC=9C=
+=84=ED=95=9C =ED=8C=8C=EC=9D=BC=EC=9E=85=EB=8B=88=EB=8B=A4.
+**=EA=B7=9C=EC=B9=99**: =EC=9E=91=EC=97=85 =EC=A0=84 =EC=9D=BD=EA=B8=B0, =
+=EC=8B=9C=EC=9E=91 =EC=A0=84 =EA=B8=B0=EB=A1=9D, =EC=A2=85=EB=A3=8C =ED=9B=
+=84 =ED=95=B4=EC=A0=9C.
+
+| =EC=9E=91=EC=97=85 =EB=AA=85=EC=B9=AD | =EC=86=8C=EC=9C=A0 AI | =EC=83=81=
+=ED=83=9C | =EC=9E=90=EC=9B=90 (Port/PID) | =EB=A7=88=EC=A7=80=EB=A7=89 =EC=
+=97=85=EB=8D=B0=EC=9D=B4=ED=8A=B8 |
+| :--- | :--- | :--- | :--- | :--- |
+| **DualArm_Stream_v3** | =ED=81=B4=EB=9D=BC=EC=9D=B4=EC=96=B8=ED=8A=B8&amp=
+;=EC=84=9C=EB=B2=84_AI | =EC=A0=90=EC=9C=A0(LOCKED) | Port 8516, 8214 / PID=
+: 1234166 | 2026-04-30 11:25 |
+
+## =F0=9F=94=91 =EC=9E=90=EC=9B=90 =EC=98=88=EC=95=BD =ED=85=8C=EC=9D=B4=EB=
+=B8=94
+- **Port 8211**: WebRTC (=EC=A3=BC=EC=9A=94 =EC=8A=A4=ED=8A=B8=EB=A6=AC=EB=
+=B0=8D)
+- **Port 8212**: Native Streaming (=EB=B3=B4=EC=A1=B0/=ED=85=8C=EC=8A=A4=ED=
+=8A=B8)
+- **Port 8213**: =ED=85=8C=EC=8A=A4=ED=8A=B8=EC=9A=A9 =EC=98=88=EC=95=BD=EB=
+=90=A8
+- **Port 8214**: VNC (=EC=8B=9C=EA=B0=81=EC=A0=81 =EB=94=94=EB=B2=84=EA=B9=
+=85) [ACTIVE]
+- **Port 8516**: WebSocket JSON (JointState =EC=8A=A4=ED=8A=B8=EB=A6=AC=EB=
+=B0=8D) [ACTIVE]
+- **Port 8215**: FastDDS Discovery Server [READY]
+- **Port 8000~8100**: =ED=81=B4=EB=9D=BC=EC=9D=B4=EC=96=B8=ED=8A=B8(=EB=85=
+=B8=ED=8A=B8=EB=B6=81) =EC=9E=91=EC=97=85=EC=9A=A9 =EC=98=88=EC=95=BD=EB=90=
+=A8
+
+## =F0=9F=9B=A1=EF=B8=8F =EB=A1=9C=EA=B7=B8 =EC=95=88=EC=A0=84 =ED=94=84=EB=
+=A1=9C=ED=86=A0=EC=BD=9C (Log Safety Protocol)
+
+=EA=B3=B5=EB=8F=99 =EC=9E=91=EC=97=85 =EB=A1=9C=EA=B7=B8(AI_COMM_LOG.md)=EC=
+=9D=98 =EC=9C=A0=EC=8B=A4 =EB=B0=8F =EB=8D=AE=EC=96=B4=EC=93=B0=EA=B8=B0 =
+=EB=B0=A9=EC=A7=80=EB=A5=BC =EC=9C=84=ED=95=B4 =EB=8B=A4=EC=9D=8C =EC=9B=90=
+=EC=B9=99=EC=9D=84 =EC=A4=80=EC=88=98=ED=95=9C=EB=8B=A4.
+
+1. **Append Only**: =EB=A1=9C=EA=B7=B8 =EA=B8=B0=EB=A1=9D =EC=8B=9C =EC=A0=
+=84=EC=B2=B4 =ED=8C=8C=EC=9D=BC=EC=9D=84 =EB=8D=AE=EC=96=B4=EC=93=B0=EC=A7=
+=80 =EC=95=8A=EA=B3=A0, =EB=B0=98=EB=93=9C=EC=8B=9C &gt;&gt; =EB=98=90=EB=
+=8A=94 =ED=8A=B9=EC=A0=95 =EC=A4=84 =EC=B6=94=EA=B0=80 =EB=B0=A9=EC=8B=9D=
+=EC=9D=84 =EC=82=AC=EC=9A=A9=ED=95=9C=EB=8B=A4.
+2. **Pull-Before-Push**: =EC=84=9C=EB=B2=84=EB=A1=9C =EB=A1=9C=EA=B7=B8=EB=
+=A5=BC =EC=A0=84=EC=86=A1=ED=95=98=EA=B8=B0 =EC=A0=84, =EB=B0=98=EB=93=9C=
+=EC=8B=9C =EC=84=9C=EB=B2=84=EC=9D=98 =EC=B5=9C=EC=8B=A0=EB=B3=B8=EC=9D=84 =
+=EB=A1=9C=EC=BB=AC=EB=A1=9C =EA=B0=80=EC=A0=B8=EC=99=80 =EB=B3=80=EA=B2=BD =
+=EC=82=AC=ED=95=AD=EC=9D=B4 =EC=9E=88=EB=8A=94=EC=A7=80 =ED=99=95=EC=9D=B8(=
+Diff)=ED=95=9C=EB=8B=A4.
+3. **Snapshot Backup**: =EB=A7=A4=EC=8B=9C=EA=B0=84 =EC=A0=95=EA=B8=B0 =EC=
+=97=85=EB=8D=B0=EC=9D=B4=ED=8A=B8 =EC=8B=9C AI_COMM_LOG.md.bak =EC=8A=A4=EB=
+=83=85=EC=83=B7=EC=9D=84 =EC=83=9D=EC=84=B1=ED=95=98=EC=97=AC =EB=B3=B4=EA=
+=B4=80=ED=95=9C=EB=8B=A4.
+4. **Pre-Save Backup (Mandatory)**: `AI_COMM_LOG.md` =EB=98=90=EB=8A=94 `AI=
+_SEMAPHORE.md` =ED=8C=8C=EC=9D=BC=EC=9D=84 =EC=88=98=EC=A0=95=ED=95=98=EA=
+=B8=B0 =EC=A7=81=EC=A0=84, =EB=B0=98=EB=93=9C=EC=8B=9C =ED=95=B4=EB=8B=B9 =
+=ED=8C=8C=EC=9D=BC=EC=9D=98 =EC=B5=9C=EC=8B=A0=EB=B3=B8=EC=9D=84 `.bak` =ED=
+=8C=8C=EC=9D=BC=EB=A1=9C =EB=B3=B5=EC=82=AC=ED=95=98=EC=97=AC =EC=A0=80=EC=
+=9E=A5=ED=95=9C=EB=8B=A4. (=EC=98=88: `cp AI_SEMAPHORE.md AI_SEMAPHORE.md.b=
+ak`)
+5. **Conflict Resolution**: =EA=B8=B0=EB=A1=9D =EC=8B=9C=EC=A0=90=EC=9D=B4 =
+=EA=B2=B9=EC=B9=A0 =EA=B2=BD=EC=9A=B0, =ED=81=B4=EB=9D=BC=EC=9D=B4=EC=96=B8=
+=ED=8A=B8 AI=EA=B0=80 =EC=88=98=EB=8F=99 =EB=A8=B8=EC=A7=80(Manual Merge)=
+=EB=A5=BC =EC=88=98=ED=96=89=ED=95=98=EC=97=AC =EB=AA=A8=EB=93=A0 =EC=97=90=
+=EC=9D=B4=EC=A0=84=ED=8A=B8=EC=9D=98 =EA=B8=B0=EB=A1=9D=EC=9D=84 =EB=B3=B4=
+=EC=A1=B4=ED=95=9C=EB=8B=A4.
+
+## =F0=9F=A7=8A =EC=BB=A8=ED=85=8C=EC=9D=B4=EB=84=88 =EB=B0=8F =EC=9D=B4=EB=
+=AF=B8=EC=A7=80 =EB=B3=B4=ED=98=B8 =EC=A0=95=EC=B1=85 (Container &amp; Imag=
+e Protection Policy)
+
+**=EC=9D=98=EB=8F=84=EC=B9=98 =EC=95=8A=EC=9D=80 =EC=9E=90=EC=9B=90 =EC=82=
+=AD=EC=A0=9C =EB=B0=8F =EC=9E=91=EC=97=85 =EC=9C=A0=EC=8B=A4 =EB=B0=A9=EC=
+=A7=80**=EB=A5=BC =EC=9C=84=ED=95=B4 =EB=8B=A4=EC=9D=8C =EC=9B=90=EC=B9=99=
+=EC=9D=84 =EC=9D=98=EB=AC=B4=ED=99=94=ED=95=9C=EB=8B=A4.
+
+1. **No Unauthorized Deletion**: =EB=8B=A4=EB=A5=B8 =EC=97=90=EC=9D=B4=EC=
+=A0=84=ED=8A=B8=EA=B0=80 =EC=83=9D=EC=84=B1=ED=95=9C =EC=BB=A8=ED=85=8C=EC=
+=9D=B4=EB=84=88=EB=82=98 =EC=9D=B4=EB=AF=B8=EC=A7=80=EB=A5=BC `AI_COMM_LOG.=
+md`=EC=97=90=EC=84=9C =EC=83=81=ED=98=B8 =ED=95=A9=EC=9D=98 =EC=97=86=EC=9D=
+=B4 =EC=82=AD=EC=A0=9C=ED=95=98=EB=8A=94 =EA=B2=83=EC=9D=84 =EC=97=84=EA=B2=
+=A9=ED=9E=88 =EA=B8=88=EC=A7=80=ED=95=9C=EB=8B=A4.
+2. **Pre-Cleanup Broadcast**: `docker rm`, `docker system prune` =EB=93=B1 =
+=ED=8C=8C=EA=B4=B4=EC=A0=81 =EB=AA=85=EB=A0=B9=EC=9D=84 =EC=88=98=ED=96=89=
+=ED=95=98=EA=B8=B0 =EC=A0=84, =EB=B0=98=EB=93=9C=EC=8B=9C =EB=8C=80=EC=83=
+=81 =EB=A6=AC=EC=8A=A4=ED=8A=B8=EB=A5=BC `AI_COMM_LOG.md`=EC=97=90 =EA=B3=
+=B5=EC=A7=80=ED=95=98=EA=B3=A0 1=EB=B6=84=EA=B0=84 =EC=9D=B4=EC=9D=98 =EC=
+=A0=9C=EA=B8=B0=EA=B0=80 =EC=97=86=EB=8A=94=EC=A7=80 =EB=8C=80=EA=B8=B0=ED=
+=95=9C=EB=8B=A4.
+3. **Active Work Marker**: =EC=9E=91=EC=97=85 =EC=A4=91=EC=9D=B8 =EC=BB=A8=
+=ED=85=8C=EC=9D=B4=EB=84=88=EB=8A=94 =EB=B0=98=EB=93=9C=EC=8B=9C `dual_arms=
+_working_` =EC=A0=91=EB=91=90=EC=82=AC=EB=A5=BC =EB=B6=99=EC=9D=B4=EA=B1=B0=
+=EB=82=98, `AI_SEMAPHORE.md`=EC=9D=98 =EC=9E=90=EC=9B=90 =EC=A0=90=EC=9C=A0=
+ =ED=85=8C=EC=9D=B4=EB=B8=94=EC=97=90 PID=EC=99=80 =ED=95=A8=EA=BB=98 =EB=
+=AA=85=EC=8B=9C=ED=95=9C=EB=8B=A4.
+4. **Checkpoint Commit**: 1=EC=8B=9C=EA=B0=84 =EC=9D=B4=EC=83=81=EC=9D=98 =
+=EC=A4=91=EB=8C=80=ED=95=9C =ED=99=98=EA=B2=BD =EB=B3=80=EA=B2=BD=EC=9D=B4 =
+=EB=B0=9C=EC=83=9D=ED=95=A0 =EA=B2=BD=EC=9A=B0, =EB=B0=98=EB=93=9C=EC=8B=9C=
+ `vX.X_dev` =ED=83=9C=EA=B7=B8=EB=A1=9C =EC=A4=91=EA=B0=84 =EC=BB=A4=EB=B0=
+=8B=EC=9D=84 =EC=83=9D=EC=84=B1=ED=95=98=EC=97=AC =EC=BB=A8=ED=85=8C=EC=9D=
+=B4=EB=84=88 =EC=9C=A0=EC=8B=A4=EC=97=90 =EB=8C=80=EB=B9=84=ED=95=9C=EB=8B=
+=A4.
+5. **Host-Volume Priority**: =EB=AA=A8=EB=93=A0 =EC=9E=91=EC=97=85 =EA=B2=
+=B0=EA=B3=BC=EB=AC=BC(=EC=BD=94=EB=93=9C, =EC=97=90=EC=85=8B)=EC=9D=80 =EB=
+=B0=98=EB=93=9C=EC=8B=9C =ED=98=B8=EC=8A=A4=ED=8A=B8 =EB=A7=88=EC=9A=B4=ED=
+=8A=B8 =ED=8F=B4=EB=8D=94(`/workspace/dual_arms`) =EB=82=B4=EB=B6=80=EC=97=
+=90=EC=84=9C =EC=83=9D=EC=84=B1=ED=95=98=EC=97=AC =EC=BB=A8=ED=85=8C=EC=9D=
+=B4=EB=84=88 =EC=82=AD=EC=A0=9C =EC=8B=9C=EC=97=90=EB=8F=84 =EB=8D=B0=EC=9D=
+=B4=ED=84=B0=EA=B0=80 =EB=B3=B4=EC=A1=B4=EB=90=98=EB=8F=84=EB=A1=9D =ED=95=
+=9C=EB=8B=A4.
+
+## 5. =EC=A3=BC=EA=B8=B0=EC=A0=81 =EC=BB=A4=EB=AE=A4=EB=8B=88=EC=BC=80=EC=
+=9D=B4=EC=85=98 =EB=B0=8F =EB=A1=9C=EA=B7=B8 =EB=8F=99=EA=B8=B0=ED=99=94 =
+=EC=A0=95=EC=B1=85 (2026-04-30 =EC=B6=94=EA=B0=80)
+- **=EB=A1=9C=EA=B7=B8 =EB=8F=99=EA=B8=B0=ED=99=94 =EC=9D=98=EB=AC=B4**: =
+=EB=AA=A8=EB=93=A0 =EC=97=90=EC=9D=B4=EC=A0=84=ED=8A=B8=EB=8A=94 =EC=B5=9C=
+=EC=86=8C 10=EB=B6=84 =EA=B0=84=EA=B2=A9=EC=9C=BC=EB=A1=9C =EC=84=9C=EB=B2=
+=84=EC=9D=98 =EC=99=80 =EC=9E=90=EC=8B=A0=EC=9D=98 =EB=A1=9C=EC=BB=AC =EB=
+=A1=9C=EA=B7=B8=EB=A5=BC =EB=8F=99=EA=B8=B0=ED=99=94=ED=95=98=EC=97=AC =EC=
+=A0=95=EB=B3=B4 =EA=B2=A9=EC=B0=A8=EB=A5=BC =EB=B0=A9=EC=A7=80=ED=95=9C=EB=
+=8B=A4.
+- **=EB=A1=9C=EA=B7=B8 =EB=8F=99=EA=B8=B0=ED=99=94 =EC=9D=98=EB=AC=B4**: =
+=EB=AA=A8=EB=93=A0 =EC=97=90=EC=9D=B4=EC=A0=84=ED=8A=B8=EB=8A=94 =EC=B5=9C=
+=EC=86=8C 10=EB=B6=84 =EA=B0=84=EA=B2=A9=EC=9C=BC=EB=A1=9C =EC=84=9C=EB=B2=
+=84=EC=9D=98 AI_COMM_LOG.md=EC=99=80 =EC=9E=90=EC=8B=A0=EC=9D=98 =EB=A1=9C=
+=EC=BB=AC =EB=A1=9C=EA=B7=B8=EB=A5=BC =EB=8F=99=EA=B8=B0=ED=99=94=ED=95=98=
+=EC=97=AC =EC=A0=95=EB=B3=B4 =EA=B2=A9=EC=B0=A8=EB=A5=BC =EB=B0=A9=EC=A7=80=
+=ED=95=9C=EB=8B=A4.
+- **=EC=8B=A4=EC=8B=9C=EA=B0=84 =EC=83=81=ED=83=9C =EB=B3=B4=EA=B3=A0**: =
+=EC=A3=BC=EC=9A=94 =ED=94=84=EB=A1=9C=EC=84=B8=EC=8A=A4(=EC=95=84=EC=9D=B4=
+=EC=9E=91 =EC=8B=AC =EB=93=B1) =EA=B0=80=EB=8F=99 =EC=8B=9C, =EB=A1=9C=EA=
+=B7=B8=EC=83=81=EC=9C=BC=EB=A1=9C =ED=99=9C=EC=84=B1=ED=99=94 =EC=99=84=EB=
+=A3=8C=EB=A5=BC =EC=84=A0=EC=96=B8=ED=95=98=EA=B8=B0 =EC=A0=84 =EB=B0=98=EB=
+=93=9C=EC=8B=9C =EC=8B=A4=EC=A0=9C =ED=8F=AC=ED=8A=B8 =EB=B0=8F =ED=94=84=
+=EB=A1=9C=EC=84=B8=EC=8A=A4 =EC=83=81=ED=83=9C=EB=A5=BC =EC=9E=AC=EA=B2=80=
+=EC=A6=9D=ED=95=9C=EB=8B=A4.
+- **=EC=B9=A8=EB=AC=B5 =EA=B8=88=EC=A7=80**: =EC=9E=91=EC=97=85=EC=9D=B4 =
+=EC=A7=80=EC=97=B0=EB=90=98=EA=B1=B0=EB=82=98 =EB=B3=91=EB=AA=A9 =EB=B0=9C=
+=EC=83=9D =EC=8B=9C, =EC=A7=84=ED=96=89 =EC=A4=91=EC=9E=84=EC=9D=84 5=EB=B6=
+=84 =EB=8B=A8=EC=9C=84=EB=A1=9C =EB=A1=9C=EA=B7=B8=EC=97=90 =EB=82=A8=EA=B2=
+=A8 =EA=B4=80=EB=A6=AC=EC=9E=90=EC=99=80 =EC=83=81=EB=8C=80 =EC=97=90=EC=9D=
+=B4=EC=A0=84=ED=8A=B8=EC=9D=98 =EB=B6=88=EC=95=88=EC=9D=84 =ED=95=B4=EC=86=
+=8C=ED=95=9C=EB=8B=A4.
+
+## 6. ROS 2 =EA=B8=B0=EB=B0=98 AI =EC=8B=A4=EC=8B=9C=EA=B0=84 =ED=86=B5=EC=
+=8B=A0 =EA=B7=9C=EC=95=BD (ROS 2 AI Comm Protocol)
+
+**=EC=95=84=EC=9D=B4=EC=9E=91 =EC=8B=AC =EA=B0=80=EB=8F=99 =EC=8B=9C =EC=8B=
+=A4=EC=8B=9C=EA=B0=84 =EC=83=81=ED=83=9C =EA=B3=B5=EC=9C=A0 =EB=B0=8F =EB=
+=AA=A8=EB=8B=88=ED=84=B0=EB=A7=81 =ED=9A=A8=EC=9C=A8=ED=99=94**=EB=A5=BC =
+=EC=9C=84=ED=95=B4 =EB=8B=A4=EC=9D=8C=EC=9D=84 =EC=A4=80=EC=88=98=ED=95=9C=
+=EB=8B=A4.
+
+1. **Topic Name**: =EB=AA=A8=EB=93=A0 =EC=97=90=EC=9D=B4=EC=A0=84=ED=8A=B8 =
+=EB=8C=80=ED=99=94 =EB=B0=8F =EC=83=81=ED=83=9C =EB=B3=B4=EA=B3=A0=EB=8A=94=
+ `/ai/comm_log` (std_msgs/String) =ED=86=A0=ED=94=BD=EC=9D=84 =ED=86=B5=ED=
+=95=B4 =EC=86=A1=EC=B6=9C=ED=95=9C=EB=8B=A4.
+2. **Message Format**: `[=EB=B0=9C=EC=8B=A0=EC=9E=90] =EB=A9=94=EC=8B=9C=EC=
+=A7=80 =EB=82=B4=EC=9A=A9` =ED=98=95=EC=8B=9D=EC=9D=84 =EC=9C=A0=EC=A7=80=
+=ED=95=9C=EB=8B=A4. (=EC=98=88: `[Server_AI] =EC=8B=9C=EB=AE=AC=EB=A0=88=EC=
+=9D=B4=EC=85=98 =EA=B0=80=EB=8F=99 =EC=84=B1=EA=B3=B5 (8516 =ED=8F=AC=ED=8A=
+=B8 =ED=99=9C=EC=84=B1)`)
+3. **Logging Frequency**: =EC=8B=9C=EB=AE=AC=EB=A0=88=EC=9D=B4=EC=85=98 =EB=
+=AC=BC=EB=A6=AC =EC=8A=A4=ED=85=9D 100=ED=9A=8C=EB=8B=B9 1=ED=9A=8C =ED=98=
+=B9=EC=9D=80 =EC=A3=BC=EC=9A=94 =EC=83=81=ED=83=9C =EB=B3=80=ED=99=94(Error=
+, Reset, Ready) =EC=8B=9C =EC=A6=89=EC=8B=9C =EC=86=A1=EC=B6=9C=ED=95=9C=EB=
+=8B=A4.
+4. **Priority**: =ED=8C=8C=EC=9D=BC =EA=B8=B0=EB=B0=98 =EB=A1=9C=EA=B7=B8(`=
+AI_COMM_LOG.md`)=EB=8A=94 =EC=B5=9C=EC=A2=85 =EA=B8=B0=EB=A1=9D =EB=B0=8F =
+=EC=95=84=EC=B9=B4=EC=9D=B4=EB=B9=99 =EC=9A=A9=EB=8F=84=EB=A1=9C =EC=82=AC=
+=EC=9A=A9=ED=95=98=EB=A9=B0, =EC=8B=A4=EC=8B=9C=EA=B0=84 =EB=94=94=EB=B2=84=
+=EA=B9=85=EC=9D=80 ROS 2 =ED=86=A0=ED=94=BD=EC=9D=84 =EC=9A=B0=EC=84=A0=EC=
+=88=9C=EC=9C=84=EB=A1=9C =EB=91=94=EB=8B=A4.
+
+## 7. =EC=86=8C=EC=8A=A4 =EC=BD=94=EB=93=9C =EC=A3=BC=EA=B6=8C =EB=B0=8F =
+=EB=8F=84=EB=A9=94=EC=9D=B8 =EB=B6=84=EB=A6=AC =EC=A0=95=EC=B1=85 (Source C=
+ode Sovereignty)
+
+**=EC=8B=9C=EC=8A=A4=ED=85=9C =EC=95=88=EC=A0=95=EC=84=B1=EA=B3=BC =EC=97=
+=AD=ED=95=A0 =EB=B6=84=EB=8B=B4 =EB=AA=85=ED=99=95=ED=99=94**=EB=A5=BC =EC=
+=9C=84=ED=95=B4 =EC=86=8C=EC=8A=A4 =EC=BD=94=EB=93=9C=EC=97=90 =EB=8C=80=ED=
+=95=9C =EC=A0=91=EA=B7=BC =EB=B0=8F =EC=88=98=EC=A0=95 =EA=B6=8C=ED=95=9C=
+=EC=9D=84 =EB=8B=A4=EC=9D=8C=EA=B3=BC =EA=B0=99=EC=9D=B4 =EA=B7=9C=EC=A0=95=
+=ED=95=9C=EB=8B=A4.
+
+### =F0=9F=93=9C =ED=95=B5=EC=8B=AC =EC=9B=90=EC=B9=99
+1. **=EB=8F=84=EB=A9=94=EC=9D=B8 =EC=A0=84=EC=86=8D=EC=84=B1**: =EA=B0=81 =
+=EC=97=90=EC=9D=B4=EC=A0=84=ED=8A=B8=EB=8A=94 =EC=9E=90=EC=8B=A0=EC=9D=98 =
+=EB=8F=84=EB=A9=94=EC=9D=B8=EC=97=90 =EC=86=8D=ED=95=9C =EC=BD=94=EB=93=9C=
+=EC=97=90 =EB=8C=80=ED=95=B4 =EC=88=98=EC=A0=95 =EB=B0=8F =EC=8B=A4=ED=96=
+=89=EC=9D=98 =EC=A0=84=EA=B6=8C(Sovereignty)=EC=9D=84 =EA=B0=80=EC=A7=84=EB=
+=8B=A4.
+2. **Read-Only =EC=B0=B8=EC=A1=B0**: =EC=83=81=EB=8C=80 =EB=8F=84=EB=A9=94=
+=EC=9D=B8=EC=9D=98 =EC=BD=94=EB=93=9C=EB=8A=94 =EC=B0=B8=EC=A1=B0 =EB=B0=8F=
+ =EB=94=94=EB=B2=84=EA=B9=85=EC=9D=84 =EC=9C=84=ED=95=9C =EC=9D=BD=EA=B8=B0=
+=EB=A7=8C =ED=97=88=EC=9A=A9=EB=90=98=EB=A9=B0, **=EC=82=AC=EC=A0=84 =EC=8A=
+=B9=EC=9D=B8 =EC=97=86=EB=8A=94 =EC=88=98=EC=A0=95=EC=9D=80 =EC=97=84=EA=B2=
+=A9=ED=9E=88 =EA=B8=88=EC=A7=80**=ED=95=9C=EB=8B=A4.
+3. **Sandbox =EC=9B=90=EC=B9=99**: =ED=83=80 =EB=8F=84=EB=A9=94=EC=9D=B8 =
+=EC=BD=94=EB=93=9C=EC=9D=98 =EC=8B=A4=ED=97=98=EC=A0=81 =EC=88=98=EC=A0=95=
+=EC=9D=B4 =ED=95=84=EC=9A=94=ED=95=A0 =EA=B2=BD=EC=9A=B0, =EC=9B=90=EB=B3=
+=B8=EC=9D=84 =EB=B3=B5=EC=82=AC=ED=95=98=EC=97=AC `_sandbox` =EB=98=90=EB=
+=8A=94 `_client_test` =EC=A0=91=EB=AF=B8=EC=82=AC=EB=A5=BC =EB=B6=99=EC=97=
+=AC =EC=9E=91=EC=97=85=ED=95=9C=EB=8B=A4.
+4. **@owner =EB=AA=85=EA=B8=B0**: =EB=AA=A8=EB=93=A0 =EC=8B=A0=EA=B7=9C =EC=
+=8A=A4=ED=81=AC=EB=A6=BD=ED=8A=B8 =EC=83=81=EB=8B=A8=EC=97=90 =EC=86=8C=EC=
+=9C=A0 =EC=A3=BC=EC=B2=B4(Server_AI/Client_AI)=EB=A5=BC =EC=A3=BC=EC=84=9D=
+=EC=9C=BC=EB=A1=9C =EB=AA=85=EC=8B=9C=ED=95=9C=EB=8B=A4.
+
+### =F0=9F=93=82 =ED=8C=8C=EC=9D=BC =EB=B0=8F =EC=9E=91=EC=97=85=EC=98=81=
+=EC=97=AD =EA=B6=8C=ED=95=9C =EB=B6=84=EB=A5=98=ED=91=9C
+
+| =EC=98=81=EC=97=AD (Domain) | =EC=86=8C=EC=9C=A0 =EC=A3=BC=EC=B2=B4 | =EC=
+=A3=BC=EC=9A=94 =EB=8C=80=EC=83=81 =ED=8C=8C=EC=9D=BC/=EA=B2=BD=EB=A1=9C (=
+=EC=98=88=EC=8B=9C) | =EA=B6=8C=ED=95=9C =EB=B2=94=EC=9C=84 |
+| :--- | :--- | :--- | :--- |
+| **Simulation &amp; HW** | **=EC=84=9C=EB=B2=84_AI** | `scripts/test_*.py`=
+, `scripts/sim_*.py`, `scripts/relink_*.py`, `assets/` (USD =EC=A0=84=EC=B2=
+=B4), `scripts/docker_run*` | =EC=88=98=EC=A0=95/=EC=8B=A4=ED=96=89/=EC=BB=
+=A4=EB=B0=8B |
+| **Teleop &amp; UI** | **=ED=81=B4=EB=9D=BC=EC=9D=B4=EC=96=B8=ED=8A=B8_AI*=
+* | `scripts/rviz_*.py`, `scripts/teleop_*.sh`, `scripts/ros2_marker*`, `la=
+unch_rviz_robot.sh` | =EC=88=98=EC=A0=95/=EC=8B=A4=ED=96=89/=EC=BB=A4=EB=B0=
+=8B |
+| **Infrastructure** | **=EA=B3=B5=EB=8F=99(Shared)** | `AI_COMM_LOG.md`, `=
+AI_SEMAPHORE.md`, `docs/`, `RECOVERY_DETAILS_REPORT.md` | =EC=83=81=ED=98=
+=B8 =ED=95=A9=EC=9D=98 =ED=9B=84 =EC=88=98=EC=A0=95 |
+
+### =F0=9F=9A=A8 =EC=9C=84=EB=B0=98 =EC=8B=9C =EC=A1=B0=EC=B9=98
+- =ED=83=80 =EC=97=90=EC=9D=B4=EC=A0=84=ED=8A=B8=EC=9D=98 =EC=A0=84=EC=86=
+=8D =ED=8C=8C=EC=9D=BC=EC=9D=84 =EB=AC=B4=EB=8B=A8 =EC=88=98=EC=A0=95=ED=95=
+=98=EC=97=AC =EC=8B=9C=EC=8A=A4=ED=85=9C =ED=81=AC=EB=9E=98=EC=8B=9C=EB=A5=
+=BC =EC=9C=A0=EB=B0=9C=ED=95=A0 =EA=B2=BD=EC=9A=B0, =EC=A6=89=EC=8B=9C `AI_=
+COMM_LOG.md`=EB=A5=BC =ED=86=B5=ED=95=B4 =EC=9B=90=EC=9D=B8 =EB=B3=B4=EA=B3=
+=A0 =EB=B0=8F =EB=A1=A4=EB=B0=B1=EC=9D=84 =EC=88=98=ED=96=89=ED=95=B4=EC=95=
+=BC =ED=95=9C=EB=8B=A4.
+- =EA=B4=80=EB=A6=AC=EC=9E=90(User)=EB=8A=94 =EC=96=B8=EC=A0=9C=EB=93=A0 =
+=EC=86=8C=EC=9C=A0=EA=B6=8C=EC=9D=84 =EC=9E=AC=EC=A1=B0=EC=A0=95=ED=95=98=
+=EA=B1=B0=EB=82=98 =EA=B0=95=EC=A0=9C =EB=A1=A4=EB=B0=B1=EC=9D=84 =EC=A7=80=
+=EC=8B=9C=ED=95=A0 =EC=88=98 =EC=9E=88=EB=8B=A4</pre>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_24_1378385479.1777626662901--

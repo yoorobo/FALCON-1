@@ -1,0 +1,14 @@
+[lint]
+select = ["E", "F", "I", "UP"]
+ignore = []
+
+[lint.per-file-ignores]
+# 레거시 shoppinkki_perception 코드: 줄 길이(E501), 세미콜론(E702) 완화
+"src/falcon1_perception/falcon1_perception/shoppinkki_perception/*.py" = ["E402", "E501", "E702"]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+
+[lint.isort]
+known-first-party = ["falcon1_perception"]

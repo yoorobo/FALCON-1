@@ -1,0 +1,19 @@
+# PickAndPlace.action
+# 수납장 도킹 → 공구 픽 → 작업자 위치로 이동 → Handover 전체 시퀀스
+# (UR_D01: 호출~grasp 완료 ≤ 30초, UR_G02: 전체 사이클 ≤ 90초)
+
+# Goal
+string tool_id           # 대상 공구 ID
+string slot_id           # 수납 슬롯 ID
+geometry_msgs/Pose dock_pose     # 수납장 도킹 목표 포즈 (AprilTag 기반)
+geometry_msgs/Pose handover_pose # 핸드오버 위치
+string arm_side          # "left" | "right"
+---
+# Result
+bool success
+string failure_reason    # "" | "pick_failed" | "nav_failed" | "handover_failed"
+float64 total_time_sec
+---
+# Feedback
+string phase             # "navigating_to_dock" | "docking" | "picking" | "navigating_to_user" | "handing_over"
+float64 progress_pct     # 0.0 ~ 100.0

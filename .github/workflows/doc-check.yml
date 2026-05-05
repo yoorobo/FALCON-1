@@ -1,0 +1,86 @@
+name: Doc Check — FALCON-1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'AGENTS.md'
+      - 'CLAUDE.md'
+      - 'ARCHITECTURE.md'
+      - 'README.md'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/**'
+
+jobs:
+  doc-freshness:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 전체 히스토리 필요 (날짜 비교용)
+
+      - name: AGENTS.md 100줄 제한 검사
+        run: |
+          LINES=$(wc -l < AGENTS.md)
+          if [ "$LINES" -gt 100 ]; then
+            echo "::error file=AGENTS.md::AGENTS.md가 ${LINES}줄입니다 (100줄 제한 초과)"
+            exit 1
+          else
+            echo "✅ AGENTS.md: ${LINES}줄 (100줄 이내)"
+          fi
+
+      - name: 필수 문서 존재 확인
+        run: |
+          REQUIRED_DOCS=(
+            "AGENTS.md"
+            "CLAUDE.md"
+            "ARCHITECTURE.md"
+            "docs/DESIGN.md"
+            "docs/PLANS.md"
+            "docs/QUALITY_SCORE.md"
+            "docs/RELIABILITY.md"
+            "docs/SECURITY.md"
+            "docs/design-docs/index.md"
+            "docs/design-docs/core-beliefs.md"
+          )
+          MISSING=0
+          for doc in "${REQUIRED_DOCS[@]}"; do
+            if [ ! -f "$doc" ]; then
+              echo "::error::필수 문서 누락: $doc"
+              MISSING=1
+            fi
+          done
+          if [ "$MISSING" -eq 1 ]; then
+            exit 1
+          else
+            echo "✅ 모든 필수 문서 존재 확인"
+          fi
+
+      - name: 깨진 내부 링크 검사
+        run: |
+          BROKEN=0
+          while IFS= read -r mdfile; do
+            # 마크다운 링크 추출: [text](path) — http(s) 제외
+            grep -oP '\[.*?\]\(\K[^)]+' "$mdfile" 2>/dev/null | \
+            grep -v '^http' | grep -v '^#' | while IFS= read -r link; do
+              # 앵커(#) 제거
+              CLEAN_LINK=$(echo "$link" | cut -d'#' -f1)
+              [ -z "$CLEAN_LINK" ] && continue
+              # 상대 경로 해석
+              DIR=$(dirname "$mdfile")
+              TARGET="$DIR/$CLEAN_LINK"
+              if [ ! -e "$TARGET" ]; then
+                echo "::warning file=$mdfile::깨진 링크: $link → $TARGET"
+                BROKEN=1
+              fi
+            done
+          done < <(find docs/ -name '*.md' -print; echo "AGENTS.md"; echo "ARCHITECTURE.md")
+          if [ "$BROKEN" -eq 1 ]; then
+            echo "⚠️ 깨진 내부 링크 발견 (경고)"
+          else
+            echo "✅ 내부 링크 검사 통과"
+          fi

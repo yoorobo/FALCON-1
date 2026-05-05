@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# pre-commit — Git hook: verify-task.sh 자동 실행
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 이 파일은 .git/hooks/pre-commit 에 위치해야 합니다.
+# 설치: cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+# 또는: ln -sf ../../scripts/pre-commit .git/hooks/pre-commit
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# .git/hooks/ 에서 실행된 경우 프로젝트 루트 계산
+if [[ "$SCRIPT_DIR" == *".git/hooks"* ]]; then
+    PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+else
+    PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+fi
+
+VERIFY_SCRIPT="$PROJECT_ROOT/scripts/verify-task.sh"
+
+if [ ! -f "$VERIFY_SCRIPT" ]; then
+    echo "❌ verify-task.sh를 찾을 수 없습니다: $VERIFY_SCRIPT"
+    exit 1
+fi
+
+echo "🔒 pre-commit hook: 검증 시작..."
+exec bash "$VERIFY_SCRIPT"

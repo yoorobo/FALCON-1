@@ -1,0 +1,54 @@
+<mxfile version="24.2.5">
+  <diagram name="System Architecture" id="sys-arch">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Hardware Box -->
+        <mxCell id="hw_box" value="Hardware Layer" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="300" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="hw_amr" value="AMR Base&#10;(Vic Pinky)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="hw_box">
+          <mxGeometry x="20" y="60" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hw_arm" value="Bimanual Arms&#10;(OpenArm 7+1 DoF)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="hw_box">
+          <mxGeometry x="20" y="150" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hw_sensors" value="Sensors &amp; Interface&#10;(LiDAR, RealSense, PTT, E-Stop)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="hw_box">
+          <mxGeometry x="20" y="240" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hw_server" value="Edge Server&#10;(NVIDIA RTX 5090 Blackwell)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="hw_box">
+          <mxGeometry x="20" y="330" width="260" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Software Box -->
+        <mxCell id="sw_box" value="Software Layer (ROS 2 Jazzy)" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="450" y="50" width="350" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="sw_nav" value="Navigation (Nav2)&#10;SLAM, Human Tracking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#3664a8;" vertex="1" parent="sw_box">
+          <mxGeometry x="20" y="60" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sw_perception" value="Perception &amp; HRI&#10;Vision, Voice(STT/NLP)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#3664a8;" vertex="1" parent="sw_box">
+          <mxGeometry x="190" y="60" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sw_manipulation" value="Manipulation&#10;MoveIt2, Grasp Planning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#3664a8;" vertex="1" parent="sw_box">
+          <mxGeometry x="20" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sw_safety" value="Safety Manager&#10;ISO 10218-2 PFL, E-Stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="sw_box">
+          <mxGeometry x="190" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sw_ai" value="AI &amp; Reasoning&#10;LLM Task Planning, VLA (ACT)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="sw_box">
+          <mxGeometry x="20" y="240" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sw_sim" value="Simulation &amp; Digital Twin&#10;Isaac Sim, Logging" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="sw_box">
+          <mxGeometry x="20" y="330" width="310" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="hw_box" target="sw_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
