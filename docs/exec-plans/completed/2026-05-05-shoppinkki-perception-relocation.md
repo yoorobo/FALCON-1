@@ -113,3 +113,14 @@ src/falcon1_perception/falcon1_perception/
 ## 영향 범위
 - falcon1_perception 패키지 빌드: 영향 없음 (Phase 1.5에서 미사용 확인)
 - import 구문: 없음
+
+---
+
+## 완료 기록
+
+- **완료 일시**: 2026-05-05 오후
+- **커밋 해시**: `19faa96`
+- **CI 결과**: ✅ 통과
+- **소요 Phase 수**: 6 (Phase 1.5 진단 1회 추가됨)
+- **부산물**: BACKLOG.md에 빌드 버그 1건 기록
+- **회고 한 줄**: scope creep 1회 감지 후 분리 처리. PR 단위 유지 성공.
