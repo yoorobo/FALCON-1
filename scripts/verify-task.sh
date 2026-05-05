@@ -155,7 +155,7 @@ while IFS= read -r file; do
         echo -e "${YELLOW}  ⚠️  ${file} — ${LINES}줄 (500줄 초과)${NC}"
         OVERSIZED=1
     fi
-done < <(find src/ -path src/openarm_ros2 -prune -o \( -name '*.py' -o -name '*.cpp' -o -name '*.hpp' \) -print 2>/dev/null || true)
+done < <(find src/ -path src/openarm_ros2 -prune -o -path docs/references -prune -o \( -name '*.py' -o -name '*.cpp' -o -name '*.hpp' \) -print 2>/dev/null || true)
 
 if [ "$OVERSIZED" -eq 0 ]; then
     echo -e "${GREEN}  ✅ 파일 크기 검사 통과${NC}"

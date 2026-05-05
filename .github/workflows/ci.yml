@@ -29,7 +29,7 @@ jobs:
           pip install ruff pytest
 
       - name: Python Lint (ruff)
-        run: ruff check src/ --exclude src/openarm_ros2
+        run: ruff check src/ --exclude src/openarm_ros2 --exclude docs/references
 
       - name: Unit Tests (pytest)
         run: |
