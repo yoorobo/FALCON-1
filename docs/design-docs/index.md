@@ -18,4 +18,4 @@
 ## 분석 문서
 
 - [System_Architecture_Report.md](System_Architecture_Report.md) — 시스템 아키텍처 분석 보고서
-- [Smart_Assistant_UR.md](Smart_Assistant_UR.md) — 스마트 어시스턴트 요구사항 문서
+- [User Requirements (v1.3)](../requirements/user_requirements.md) — FALCON-1 사용자 요구사항

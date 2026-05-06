@@ -59,3 +59,49 @@ FALCON-1은 자율주행 모바일 플랫폼(Vic Pinky)과 양팔 매니퓰레�
 - 페이로드 한계 근접 시나리오 (3.5 kg 초과)
 - 실기체 배포 승인
 - 기존 파일 삭제·이동·이름 변경
+
+---
+
+## 6. Git 격리 원칙 (에이전트 필수 준수)
+
+**에이전트는 절대 main 브랜치에 직접 커밋하지 않는다.**
+[이슈 접수] → [feat/fix 브랜치 생성] → [worktree에서 작업]
+→ [verify-task.sh 통과] → [PR 생성] → [정학님 승인] → [머지]
+
+### 브랜치 명명 규칙
+- 기능: `feat/<도메인>-<설명>` (예: `feat/perception-tool-detector`)
+- 버그: `fix/<도메인>-<설명>` (예: `fix/navigation-slam-drift`)
+- 하네스: `harness/<설명>` (예: `harness/integration`)
+- 문서: `docs/<설명>` (예: `docs/sr-update`)
+
+### 에이전트 작업 순서
+1. `git checkout -b feat/<이름>` — 브랜치 생성
+2. `docs/exec-plans/active/<이슈명>.md` — 실행 계획 작성
+3. 코드 구현
+4. `bash scripts/verify-task.sh` — 검증 통과
+5. `git commit -m "feat(scope): 설명"` — 커밋
+6. `git push origin <브랜치명>` — 푸시
+7. **정학님에게 PR 머지 요청** — 직접 머지 금지
+
+### 에스컬레이션 트리거 (즉시 멈추고 보고)
+- main 브랜치에서 작업하고 있음을 인지한 순간
+- verify-task.sh가 2회 연속 실패
+- 예상치 못한 파일 삭제가 필요한 상황
+
+---
+
+## 7. 교차 검증 워크플로 (Eval-Driven)
+
+복잡한 기능 구현 시 아래 4단계 교차 검증을 거친다.
+[1단계] Claude Code: 프로젝트 탐색 → Codex에게 계획 의뢰 프롬프트 작성
+[2단계] Codex:       구현 계획 수립 → Claude AI/Gemini 상호 검토
+[3단계] Claude Code: 1차 코딩 구현 → Codex에게 1차 검증 요청
+[4단계] Codex:       최종 검증 → PR 생성 → 정학님 머지 결정
+
+### 언제 교차 검증을 적용하나
+| 작업 유형 | 검증 단계 |
+|---|---|
+| 오타·주석 수정 | 생략 (직접 커밋) |
+| 일반 기능 구현 | 2단계 (Claude Code 구현 → Codex 검증) |
+| 핵심 로직·안전 관련 | 4단계 풀 파이프라인 |
+| SR/UR 추적성 변경 | 4단계 풀 파이프라인 |
