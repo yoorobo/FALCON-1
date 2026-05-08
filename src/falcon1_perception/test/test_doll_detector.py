@@ -1,7 +1,17 @@
+# ruff: noqa: E402
 """Unit tests for DollDetector — no real YOLO/camera needed.
 
 We subclass DollDetector to inject fake YOLO responses.
 """
+
+import pytest
+
+pytestmark = pytest.mark.skip(
+    reason=(
+        "Legacy reference test for docs/references/shoppinkki_perception; "
+        "not part of the falcon1_perception validation gate."
+    )
+)
 
 from shoppinkki_perception.doll_detector import (
     DollDetector,

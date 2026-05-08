@@ -122,11 +122,18 @@ if command -v colcon &> /dev/null; then
         source /opt/ros/jazzy/setup.bash
         set -u
     fi
+    # ROS Jazzy 툴체인은 시스템 Python(3.12) 기준으로 설치되어 있다.
+    # conda/base python이 앞서 있으면 rosidl_adapter가 em 모듈을 찾지 못하므로
+    # 빌드 단계에서는 명시적으로 시스템 Python을 넘긴다.
+    COLCON_CMAKE_ARGS=()
+    if [ -x /usr/bin/python3 ]; then
+        COLCON_CMAKE_ARGS+=(--cmake-args -DPython3_EXECUTABLE=/usr/bin/python3)
+    fi
     # 서브모듈(openarm_ros2) 제외 빌드
     OWN_PACKAGES=$(colcon list --names-only --paths src/falcon1_* 2>/dev/null || true)
     if [ -n "$OWN_PACKAGES" ]; then
         COLCON_EXIT=0
-        colcon build --packages-select $OWN_PACKAGES --symlink-install 2>&1 || COLCON_EXIT=$?
+        colcon build --packages-select $OWN_PACKAGES --symlink-install "${COLCON_CMAKE_ARGS[@]}" 2>&1 || COLCON_EXIT=$?
         if [ "$COLCON_EXIT" -eq 0 ]; then
             echo -e "${GREEN}  ✅ 빌드 통과${NC}"
             PASS_COUNT=$((PASS_COUNT + 1))
