@@ -20,6 +20,8 @@
 | shoppinkki-perception-relocation | 2026-05-05 | [shoppinkki-perception-relocation](exec-plans/completed/2026-05-05-shoppinkki-perception-relocation.md) |
 | github-centric-ops | 2026-05-08 | [2026-05-08-exec-plan-001](exec-plans/completed/2026-05-08-exec-plan-001.md) |
 | agent-bootstrap-and-reference-hub | 2026-05-08 | [2026-05-08-exec-plan-002](exec-plans/completed/2026-05-08-exec-plan-002.md) |
+| bootstrap-shortcuts | 2026-05-08 | [2026-05-08-exec-plan-003](exec-plans/completed/2026-05-08-exec-plan-003.md) |
+| shutdown-shortcut | 2026-05-08 | [2026-05-08-exec-plan-004](exec-plans/completed/2026-05-08-exec-plan-004.md) |
 
 ---
 
