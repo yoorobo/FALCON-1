@@ -48,7 +48,7 @@ FALCON-1 is a robotic system integration project combining an autonomous mobile 
 | SLAM | slam_toolbox |
 | Navigation | Navigation2 (nav2_bringup) |
 | ML compute | Slurm-managed GPU server |
-| AI Orchestration | Claude-based Agent Harness |
+| AI Orchestration | Claude Code + Codex cross-check harness |
 
 ### Workspace Layout (Vic Pinky)
 
@@ -73,6 +73,7 @@ I own the **AI Agent Harness** layer of FALCON-1. Responsibilities:
 - **Safety enforcement** — guard the 4.1 kg payload constraint and other operational limits
 - **Documentation discipline** — maintain `docs/exec-plans/` as the single source of truth for every plan before execution
 - **Cross-system coordination** — sequence Vic Pinky navigation and OpenArm pick-and-place so they compose safely
+- **Cross-check workflow** — use Claude Code and Codex as separate review paths before merge
 
 ---
 
@@ -81,7 +82,7 @@ I own the **AI Agent Harness** layer of FALCON-1. Responsibilities:
 ```
 ┌─────────────────────────────────────────────────┐
 │                  AI Agent Harness               │
-│  (Claude-based orchestration, CLAUDE.md rules)  │
+│ (Claude Code + Codex, AGENTS/CLAUDE.md rules)  │
 └────────────┬──────────────────────┬─────────────┘
              │                      │
    ┌─────────▼──────────┐  ┌───────▼────────────┐
@@ -107,6 +108,16 @@ I own the **AI Agent Harness** layer of FALCON-1. Responsibilities:
 3. **Plan before execute** — Every task begins with a written plan in `docs/exec-plans/` before code or hardware is touched.
 4. **No mocking / hardcoding** — All implementations must reflect real system behavior.
 
+### GitHub-Centric Workflow
+
+FALCON-1 is managed with **GitHub as the source of truth** and Notion as the human-readable operations log.
+
+- GitHub stores task state, code changes, review history, and durable documentation.
+- Notion stores daily summaries, meeting notes, and decision context with links back to GitHub.
+- Every meaningful task should connect `Issue -> Branch -> PR -> Notion log`.
+
+See [docs/OPERATIONS.md](docs/OPERATIONS.md) for the standard workflow.
+
 ---
 
 ## Reference Repositories
@@ -124,6 +135,7 @@ I own the **AI Agent Harness** layer of FALCON-1. Responsibilities:
 
 ```
 docs/
+├── OPERATIONS.md     # GitHub/Notion operating model
 ├── design-docs/      # Architecture and system design documents
 ├── product-specs/    # Hardware and product specification sheets
 ├── references/       # External references and collected specs

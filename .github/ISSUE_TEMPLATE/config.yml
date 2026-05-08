@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: FALCON-1 Operations Guide
+    url: https://github.com/yoorobo/FALCON-1/blob/main/docs/OPERATIONS.md
+    about: Review the GitHub-centric workflow before opening a task.
