@@ -117,6 +117,7 @@ FALCON-1 is managed with **GitHub as the source of truth** and Notion as the hum
 - Every meaningful task should connect `Issue -> Branch -> PR -> Notion log`.
 
 See [docs/OPERATIONS.md](docs/OPERATIONS.md) for the standard workflow.
+For starting a new AI session, use [docs/agent-protocol/SESSION_BOOTSTRAP.md](docs/agent-protocol/SESSION_BOOTSTRAP.md).
 
 ---
 
@@ -135,6 +136,7 @@ See [docs/OPERATIONS.md](docs/OPERATIONS.md) for the standard workflow.
 
 ```
 docs/
+├── agent-protocol/   # Session bootstrap prompts for new AI sessions
 ├── OPERATIONS.md     # GitHub/Notion operating model
 ├── design-docs/      # Architecture and system design documents
 ├── product-specs/    # Hardware and product specification sheets

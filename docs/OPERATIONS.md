@@ -51,6 +51,7 @@ FALCON-1의 실행 기준점은 GitHub이다. 코드는 물론이고 작업 단�
 - Claude: 기획 보조, 구현, 통합 검토
 - Codex: 교차 검증, 구조 점검, 문서/템플릿 보강
 - 최종 기준은 특정 AI 세션이 아니라 GitHub 산출물이다.
+- 새 세션 시작 프롬프트는 `docs/agent-protocol/SESSION_BOOTSTRAP.md`를 기준으로 사용한다.
 
 PR 또는 작업일지에는 아래 중 하나를 남긴다.
 
