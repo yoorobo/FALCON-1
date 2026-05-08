@@ -22,6 +22,7 @@
 | agent-bootstrap-and-reference-hub | 2026-05-08 | [2026-05-08-exec-plan-002](exec-plans/completed/2026-05-08-exec-plan-002.md) |
 | bootstrap-shortcuts | 2026-05-08 | [2026-05-08-exec-plan-003](exec-plans/completed/2026-05-08-exec-plan-003.md) |
 | shutdown-shortcut | 2026-05-08 | [2026-05-08-exec-plan-004](exec-plans/completed/2026-05-08-exec-plan-004.md) |
+| validation-environment-recovery | 2026-05-08 | [2026-05-08-exec-plan-005](exec-plans/completed/2026-05-08-exec-plan-005.md) |
 
 ---
 
